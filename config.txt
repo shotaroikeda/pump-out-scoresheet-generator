@@ -47,8 +47,8 @@
 #Infinity
 #Prime
 #Prime JE
-#Prime 2
-XX
+Prime 2
+#XX
 
 
 

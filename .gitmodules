@@ -1,0 +1,3 @@
+[submodule "pump-out-sqlite3-dump"]
+	path = pump-out-sqlite3-dump
+	url = git@github.com:AnyhowStep/pump-out-sqlite3-dump.git
