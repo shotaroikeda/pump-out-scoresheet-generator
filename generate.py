@@ -475,7 +475,7 @@ def write_summary_sheet(ws, db, chart_set, config, mixId, pad):
             if last_mode != mode:
                 for i in range(15):
                     add_border(ws, main_row - 1, i + 1, bottom=Side(style="medium"))
-                    main_row += 1
+                main_row += 1
 
         # If this is a new entry...
         if mode != None:
@@ -505,7 +505,7 @@ def write_summary_sheet(ws, db, chart_set, config, mixId, pad):
                     add_border(ws, main_row + 1, 12, right=Side(style="thin"))
                     add_border(ws, main_row, 15, right=Side(style="medium"))
                     add_border(ws, main_row + 1, 15, right=Side(style="medium"))
-                    main_row += 2
+                main_row += 2
 
             # Draw the next row
             if last_mode != mode or last_diff != diff:
@@ -518,8 +518,8 @@ def write_summary_sheet(ws, db, chart_set, config, mixId, pad):
                 add_border(ws, main_row, 15, right=Side(style="medium"))
                 for i in range(15):
                     ws.cell(row=main_row, column=i + 1).alignment = Alignment(horizontal='center')
-                    start_row = r + 2
-                    main_row += 1
+                start_row = r + 2
+                main_row += 1
 
         (last_mode, last_diff) = (mode, diff)
 
