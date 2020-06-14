@@ -468,7 +468,7 @@ def write_summary_sheet(ws, db, chart_set, config, mixId, pad):
                         (start_row, end_row, start_row, end_row))
                 ws.cell(row=main_row - 1, column=14, value='=IF(SUMPRODUCT(--(V%d:V%d<>""))=0,"",MAX(V%d:V%d))' %
                         (start_row, end_row, start_row, end_row))
-                ws.cell(row=main_row - 1, column=15, value='=IF(SUMPRODUCT(--(V%d:V%d<>""))=0,"",AVERAGE(V%d:V%d))' %
+                ws.cell(row=main_row - 1, column=15, value='=IF(SUMPRODUCT(--(V%d:V%d<>""))=0,"",ROUND(AVERAGE(V%d:V%d),2))' %
                         (start_row, end_row, start_row, end_row))
 
             # Finish the table
